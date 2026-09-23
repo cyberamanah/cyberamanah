@@ -1,81 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Amanah | 2026 UK Cybersecurity & Cost Optimization Guide</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Amanah | Ethical & High-Integrity Cybersecurity</title>
+    <meta name="description" content="Cyber Amanah provides strategic vCISO advisory, infrastructure hardening, IAM, and external attack surface management for UK and international enterprises.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            900: '#14532d',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
 
-  <!-- Header / Navigation -->
-  <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold text-emerald-400 tracking-wide flex items-center gap-2">
-        <span>🛡️</span> Cyber Amanah
-      </a>
-      <nav class="hidden lg:flex items-center space-x-4 text-xs font-medium text-slate-300">
-        <a href="index.html" class="text-emerald-400 font-bold">1. Overview</a>
-        <a href="firewalls.html" class="hover:text-emerald-400">2. Firewalls</a>
-        <a href="configuration.html" class="hover:text-emerald-400">3. Config</a>
-        <a href="iam.html" class="hover:text-emerald-400">4. IAM</a>
-        <a href="endpoint-patching.html" class="hover:text-emerald-400">5. Endpoint</a>
-        <a href="easm-cloud.html" class="hover:text-emerald-400">6. EASM</a>
-        <a href="roadmap-scorecard.html" class="hover:text-emerald-400">7. Roadmap</a>
-        <a href="cost-reduction.html" class="hover:text-emerald-400">8. Cost Savings</a>
-        <a href="vciso-soc.html" class="hover:text-emerald-400">9. vCISO/SOC</a>
-        <a href="contact-packages.html" class="hover:text-emerald-400">10. Contact</a>
-      </nav>
-      <a href="https://wa.me/8801730017321" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold px-3 py-1.5 rounded-lg text-xs transition">
-        WhatsApp: +8801730017321
-      </a>
-    </div>
-  </header>
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 text-xl font-bold text-white tracking-wide">
+                        <span class="text-emerald-500">🛡️</span> Cyber Amanah
+                    </a>
+                </div>
 
-  <!-- Page Content -->
-  <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
-    <div class="text-center mb-12">
-      <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs px-3 py-1 rounded-full uppercase tracking-widest">Enterprise Blueprint 2026</span>
-      <h1 class="text-4xl lg:text-5xl font-extrabold mt-4 text-white">UK Cybersecurity & Outsourced Cost-Optimization</h1>
-      <p class="text-slate-400 mt-3 text-lg">Page 1 of 10: Executive Overview & UK Regulatory Landscape</p>
-    </div>
+                <!-- Desktop Navigation Menu (All 10 Pages) -->
+                <nav class="hidden lg:flex items-center space-x-1 text-xs font-medium">
+                    <a href="index.html" class="px-2.5 py-1.5 rounded text-emerald-400 bg-slate-800 font-semibold border border-emerald-500/30">Home</a>
+                    <a href="firewalls.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Firewalls</a>
+                    <a href="configuration.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Config</a>
+                    <a href="iam.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">IAM</a>
+                    <a href="endpoint-patching.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Patching</a>
+                    <a href="easm-cloud.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">EASM</a>
+                    <a href="roadmap-scorecard.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Roadmap</a>
+                    <a href="cost-reduction.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Cost Sync</a>
+                    <a href="vciso-soc.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">vCISO/SOC</a>
+                    <a href="contact-packages.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Contact & Packages</a>
+                </nav>
 
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-      <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
-        <h3 class="text-emerald-400 font-bold text-lg mb-2">NCSC Cyber Essentials</h3>
-        <p class="text-slate-300 text-sm">Mandatory baseline certification for UK government suppliers and enterprise supply chains.</p>
-      </div>
-      <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
-        <h3 class="text-emerald-400 font-bold text-lg mb-2">UK GDPR & DPA 2018</h3>
-        <p class="text-slate-300 text-sm">Regulatory fines up to £17.5M or 4% of global turnover for unmitigated data breaches.</p>
-      </div>
-      <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
-        <h3 class="text-emerald-400 font-bold text-lg mb-2">Cost-Optimized Outsourcing</h3>
-        <p class="text-slate-300 text-sm">Reduce security operations expenditure by up to 75% using Cyber Amanah’s global delivery model.</p>
-      </div>
-    </div>
+                <!-- Mobile Navigation Toggle -->
+                <div class="lg:hidden">
+                    <a href="#mobile-menu" class="text-slate-300 hover:text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl mb-8">
-      <h2 class="text-2xl font-bold text-white mb-4">Executive Summary</h2>
-      <p class="text-slate-300 leading-relaxed mb-4">
-        In 2026, UK organizations face dual challenges: defending against automated AI-driven attack vectors and maintaining strict compliance, while operating under tight IT budgets. 
-      </p>
-      <p class="text-slate-300 leading-relaxed">
-        This 10-page master guide outlines the core NCSC controls, advanced External Attack Surface Management (EASM), and the financial benefits of outsourcing cybersecurity functions to Cyber Amanah.
-      </p>
-    </div>
+        <!-- Quick Mobile Navigation List -->
+        <div id="mobile-menu" class="lg:hidden border-t border-slate-800 bg-slate-900 px-4 py-3 space-y-1 text-sm hidden">
+            <a href="index.html" class="block py-1 text-emerald-400 font-semibold">Home</a>
+            <a href="firewalls.html" class="block py-1 text-slate-300">Firewalls</a>
+            <a href="configuration.html" class="block py-1 text-slate-300">Configuration</a>
+            <a href="iam.html" class="block py-1 text-slate-300">IAM & Access</a>
+            <a href="endpoint-patching.html" class="block py-1 text-slate-300">Endpoint Patching</a>
+            <a href="easm-cloud.html" class="block py-1 text-slate-300">EASM & Cloud Security</a>
+            <a href="roadmap-scorecard.html" class="block py-1 text-slate-300">Roadmap & Scorecard</a>
+            <a href="cost-reduction.html" class="block py-1 text-slate-300">Cost Optimization</a>
+            <a href="vciso-soc.html" class="block py-1 text-slate-300">vCISO & SOC</a>
+            <a href="contact-packages.html" class="block py-1 text-slate-300">Contact & Packages</a>
+        </div>
+    </header>
 
-    <!-- Navigation Buttons -->
-    <div class="flex justify-between items-center pt-6 border-t border-slate-800">
-      <span class="text-slate-500 text-sm">Page 1 / 10</span>
-      <a href="firewalls.html" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg text-sm transition">
-        Next: Pillar 1 Firewalls &rarr;
-      </a>
-    </div>
-  </main>
+    <!-- HERO SECTION -->
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="inline-block px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                Ethical & High-Integrity Cybersecurity Advisory
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Enterprise Infrastructure Hardening & <span class="text-emerald-500">vCISO Leadership</span>
+            </h1>
+            <p class="mt-6 text-slate-400 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+                Protecting UK and global organizations through pragmatic security posture reviews, attack surface management, toolchain cost reduction, and executive-level governance.
+            </p>
 
-  <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    © 2026 Cyber Amanah | WhatsApp: +8801730017321 | Email: contact@cyberamanah.com
-  </footer>
+            <!-- CTA Action Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact-packages.html" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3 rounded-lg text-sm transition shadow-lg shadow-emerald-950/50">
+                    View Service Packages & Inquiry
+                </a>
+                
+                <a href="https://www.linkedin.com/services/page/05597934741742a023/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto border border-[#0A66C2] text-slate-200 hover:bg-[#0A66C2] hover:text-white font-medium px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2 transition">
+                    💼 Verified LinkedIn Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP & VERIFIED LINKEDIN TRUST CARD -->
+    <section class="py-10 bg-slate-900/50 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Executive Advisory</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Md Rezaur Rahman Khan</h2>
+                    <p class="text-slate-400 text-sm mt-1">Founder & Lead Cybersecurity Advisor — Cyber Amanah</p>
+                    <p class="text-slate-400 text-xs mt-3 flex items-center gap-2">
+                        <span>📱 Direct WhatsApp:</span>
+                        <a href="https://wa.me/8801730017321" target="_blank" class="text-emerald-400 hover:underline font-mono">+8801730017321</a>
+                    </p>
+                </div>
+
+                <!-- Verified External Profile Buttons -->
+                <div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto">
+                    <a href="https://www.linkedin.com/in/md-rezaur-rahman-khan-37636329/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="bg-[#0A66C2] hover:bg-[#084e96] text-white font-medium px-5 py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 transition-colors">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        Connect on LinkedIn Profile
+                    </a>
+
+                    <a href="https://www.linkedin.com/services/page/05597934741742a023/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white font-medium px-5 py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 transition-colors">
+                        🛡️ LinkedIn Service Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE CAPABILITIES GRID (MAPS TO ALL PAGES) -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">Our Practice Practice Domains</h2>
+            <p class="text-slate-400 text-sm mt-2">Explore our detailed technical frameworks across all 10 specialized security domains.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- 1. Firewalls -->
+            <a href="firewalls.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">🔥</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">Next-Gen Firewalls</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Palo Alto, Fortinet, and Check Point policy cleanup, rule audits, and micro-segmentation.</p>
+            </a>
+
+            <!-- 2. Configuration Baseline -->
+            <a href="configuration.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">⚙️</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">Configuration Baseline</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">CIS Benchmarks, Active Directory Group Policy alignment, and host hardening protocols.</p>
+            </a>
+
+            <!-- 3. IAM & Access Control -->
+            <a href="iam.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">🔑</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">IAM & Access Control</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Zero Trust identity controls, Entra ID / Okta MFA enforcing, and privileged account security.</p>
+            </a>
+
+            <!-- 4. Endpoint Patching -->
+            <a href="endpoint-patching.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">💻</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">Endpoint & Vulnerability Patching</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">EDR optimization, automated Windows/Linux patch cycles, and CVE remediation routines.</p>
+            </a>
+
+            <!-- 5. EASM & Cloud Security -->
+            <a href="easm-cloud.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">☁️</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">EASM & Cloud Security</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">External attack surface discovery, shadow IT mitigation, and AWS/Azure posture reviews.</p>
+            </a>
+
+            <!-- 6. Roadmap & Scorecards -->
+            <a href="roadmap-scorecard.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">📊</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">Roadmap & Scorecards</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Executive security scorecards, board compliance mapping, and multi-year risk reduction plans.</p>
+            </a>
+
+            <!-- 7. Cost Reduction -->
+            <a href="cost-reduction.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">💰</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">Toolchain Cost Sync</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Eliminate redundant licenses, optimize SIEM ingestion costs, and maximize security ROI.</p>
+            </a>
+
+            <!-- 8. vCISO & SOC -->
+            <a href="vciso-soc.html" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-emerald-500/50 transition group">
+                <div class="text-2xl mb-3">🛡️</div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">vCISO & Co-Managed SOC</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Fractional CISO leadership, incident response coordination, and SOC operational playbooks.</p>
+            </a>
+
+            <!-- 9. Contact & Packages -->
+            <a href="contact-packages.html" class="bg-gradient-to-br from-slate-900 to-slate-800 border border-emerald-500/40 p-6 rounded-xl hover:border-emerald-400 transition group">
+                <div class="text-2xl mb-3">✉️</div>
+                <h3 class="text-lg font-bold text-emerald-400 group-hover:underline">Contact & Engagement Packages &rarr;</h3>
+                <p class="text-slate-400 text-xs mt-2 leading-relaxed">Fixed audit pricing, retained vCISO packages, and direct consultation submission forms.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm font-semibold text-white">Cyber Amanah — Ethical & High-Integrity Cybersecurity</p>
+            <p class="text-xs text-slate-500 mt-1">Foundational Infrastructure Hardening & vCISO Advisory Services</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-400 mt-4">
+                <a href="https://www.linkedin.com/in/md-rezaur-rahman-khan-37636329/" target="_blank" class="hover:text-emerald-400">Founder LinkedIn Profile</a>
+                <span>•</span>
+                <a href="https://www.linkedin.com/services/page/05597934741742a023/" target="_blank" class="hover:text-emerald-400">LinkedIn Service Page</a>
+                <span>•</span>
+                <a href="https://wa.me/8801730017321" target="_blank" class="hover:text-emerald-400">WhatsApp Direct (+8801730017321)</a>
+            </div>
+
+            <p class="text-[11px] text-slate-600 mt-6">
+                &copy; Cyber Amanah. All rights reserved. Hosted on GitHub Pages via Cloudflare.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
