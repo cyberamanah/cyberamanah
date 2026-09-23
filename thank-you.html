@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Received | Cyber Amanah</title>
+    <meta name="robots" content="noindex, follow">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            900: '#14532d',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 text-xl font-bold text-white tracking-wide">
+                        <span class="text-emerald-500">🛡️</span> Cyber Amanah
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Menu (All 10 Pages) -->
+                <nav class="hidden lg:flex items-center space-x-1 text-xs font-medium">
+                    <a href="index.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+                    <a href="firewalls.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Firewalls</a>
+                    <a href="configuration.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Config</a>
+                    <a href="iam.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">IAM</a>
+                    <a href="endpoint-patching.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Patching</a>
+                    <a href="easm-cloud.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">EASM</a>
+                    <a href="roadmap-scorecard.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Roadmap</a>
+                    <a href="cost-reduction.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Cost Sync</a>
+                    <a href="vciso-soc.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">vCISO/SOC</a>
+                    <a href="contact-packages.html" class="px-2.5 py-1.5 rounded text-slate-300 hover:text-white hover:bg-slate-800">Contact & Packages</a>
+                </nav>
+
+                <!-- Mobile Navigation Toggle -->
+                <div class="lg:hidden">
+                    <a href="#mobile-menu" class="text-slate-300 hover:text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="lg:hidden border-t border-slate-800 bg-slate-900 px-4 py-3 space-y-1 text-sm hidden">
+            <a href="index.html" class="block py-1 text-slate-300">Home</a>
+            <a href="firewalls.html" class="block py-1 text-slate-300">Firewalls</a>
+            <a href="configuration.html" class="block py-1 text-slate-300">Configuration</a>
+            <a href="iam.html" class="block py-1 text-slate-300">IAM & Access</a>
+            <a href="endpoint-patching.html" class="block py-1 text-slate-300">Endpoint Patching</a>
+            <a href="easm-cloud.html" class="block py-1 text-slate-300">EASM & Cloud Security</a>
+            <a href="roadmap-scorecard.html" class="block py-1 text-slate-300">Roadmap & Scorecard</a>
+            <a href="cost-reduction.html" class="block py-1 text-slate-300">Cost Optimization</a>
+            <a href="vciso-soc.html" class="block py-1 text-slate-300">vCISO & SOC</a>
+            <a href="contact-packages.html" class="block py-1 text-slate-300">Contact & Packages</a>
+        </div>
+    </header>
+
+    <!-- THANK YOU CONTENT CARD -->
+    <main class="my-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden">
+            
+            <!-- Success Icon Badge -->
+            <div class="w-20 h-20 bg-emerald-500/10 border border-emerald-500/30 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-400">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+
+            <span class="inline-block px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-3">
+                Message Received
+            </span>
+
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Thank You for Contacting Us
+            </h1>
+            
+            <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                Your inquiry has been logged securely. Our Lead Cybersecurity Advisor, <strong class="text-white">Md Rezaur Rahman Khan</strong>, will review your submission and reply via email within <strong class="text-emerald-400">24 business hours</strong>.
+            </p>
+
+            <!-- Fast-Track / Urgent Callout -->
+            <div class="mt-8 bg-slate-950 border border-slate-800 rounded-xl p-5 text-left">
+                <div class="flex items-start gap-3">
+                    <span class="text-xl">⚡</span>
+                    <div>
+                        <h2 class="text-sm font-semibold text-white">Need an immediate advisory response?</h2>
+                        <p class="text-xs text-slate-400 mt-1">For urgent security inquiries or direct executive discussions, feel free to reach out directly via WhatsApp.</p>
+                        
+                        <a href="https://wa.me/8801730017321" target="_blank" class="inline-flex items-center gap-2 text-xs font-medium text-emerald-400 hover:text-emerald-300 mt-3 transition-colors">
+                            <span>📱</span> Connect on WhatsApp (+8801730017321) &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Action Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <a href="index.html" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition">
+                    Return to Homepage
+                </a>
+
+                <a href="https://www.linkedin.com/in/md-rezaur-rahman-khan-37636329/" target="_blank" class="w-full sm:w-auto border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium px-6 py-2.5 rounded-lg text-sm flex items-center justify-center gap-2 transition">
+                    <svg class="w-4 h-4 fill-current text-[#0A66C2]" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    LinkedIn Founder Profile
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm font-semibold text-white">Cyber Amanah — Ethical & High-Integrity Cybersecurity</p>
+            <p class="text-xs text-slate-500 mt-1">Foundational Infrastructure Hardening & vCISO Advisory Services</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-400 mt-4">
+                <a href="https://www.linkedin.com/in/md-rezaur-rahman-khan-37636329/" target="_blank" class="hover:text-emerald-400">Founder Profile</a>
+                <span>•</span>
+                <a href="https://www.linkedin.com/services/page/05597934741742a023/" target="_blank" class="hover:text-emerald-400">LinkedIn Services</a>
+                <span>•</span>
+                <a href="https://wa.me/8801730017321" target="_blank" class="hover:text-emerald-400">WhatsApp Direct</a>
+            </div>
+
+            <p class="text-[11px] text-slate-600 mt-6">
+                &copy; Cyber Amanah. All rights reserved. Hosted on GitHub Pages via Cloudflare.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
