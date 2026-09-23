@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Amanah | Pillar 2: System Configuration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-emerald-400 tracking-wide flex items-center gap-2">🛡️ Cyber Amanah</a>
+      <nav class="hidden lg:flex items-center space-x-4 text-xs font-medium text-slate-300">
+        <a href="index.html" class="hover:text-emerald-400">1. Overview</a>
+        <a href="firewalls.html" class="hover:text-emerald-400">2. Firewalls</a>
+        <a href="configuration.html" class="text-emerald-400 font-bold">3. Config</a>
+        <a href="iam.html" class="hover:text-emerald-400">4. IAM</a>
+        <a href="endpoint-patching.html" class="hover:text-emerald-400">5. Endpoint</a>
+        <a href="easm-cloud.html" class="hover:text-emerald-400">6. EASM</a>
+        <a href="roadmap-scorecard.html" class="hover:text-emerald-400">7. Roadmap</a>
+        <a href="cost-reduction.html" class="hover:text-emerald-400">8. Cost Savings</a>
+        <a href="vciso-soc.html" class="hover:text-emerald-400">9. vCISO/SOC</a>
+        <a href="contact-packages.html" class="hover:text-emerald-400">10. Contact</a>
+      </nav>
+      <a href="https://wa.me/8801730017321" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold px-3 py-1.5 rounded-lg text-xs transition">WhatsApp: +8801730017321</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
+    <div class="mb-8">
+      <span class="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Section 2</span>
+      <h1 class="text-3xl font-extrabold text-white mt-1">NCSC Control Pillar 2 – Secure System Configuration</h1>
+      <p class="text-slate-400 mt-1">Page 3 of 10</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+        <h2 class="text-lg font-bold text-emerald-400 mb-3">2.1 OS & Bloatware Removal</h2>
+        <ul class="space-y-2 text-slate-300 text-sm">
+          <li>• Uninstall unused server applications and IIS/Apache sample modules.</li>
+          <li>• Disable USB AutoPlay and CD auto-run via GPO/MDM.</li>
+          <li>• Decommission legacy protocols (SMBv1, Telnet, SSL v3).</li>
+        </ul>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+        <h2 class="text-lg font-bold text-emerald-400 mb-3">2.2 Password & Passkey Rules</h2>
+        <ul class="space-y-2 text-slate-300 text-sm">
+          <li>• Enforce minimum 12+ character passphrases.</li>
+          <li>• Integrate breach-database checks (e.g. HaveIBeenPwned API).</li>
+          <li>• Roll out FIDO2 hardware keys for administrative roles.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl mb-8">
+      <h3 class="text-md font-bold text-white mb-2">Microsoft Office Macro Hardening Policy</h3>
+      <p class="text-slate-400 text-xs mb-3">GPO Path: User Configuration > Administrative Templates > Microsoft Word > Word Options > Security > Trust Center</p>
+      <div class="bg-slate-950 p-3 rounded text-emerald-400 text-xs font-mono">Setting: Block macros from running in Office files downloaded from the Internet = ENABLED</div>
+    </div>
+
+    <div class="flex justify-between items-center pt-6 border-t border-slate-800">
+      <a href="firewalls.html" class="text-slate-400 hover:text-white text-sm">&larr; Back: Firewalls</a>
+      <a href="iam.html" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg text-sm transition">Next: Pillar 3 IAM &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+    © 2026 Cyber Amanah | WhatsApp: +8801730017321 | Email: contact@cyberamanah.com
+  </footer>
+</body>
+</html>

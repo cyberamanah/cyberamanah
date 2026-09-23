@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Amanah | Pillar 1: Firewalls & Gateways</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-emerald-400 tracking-wide flex items-center gap-2">🛡️ Cyber Amanah</a>
+      <nav class="hidden lg:flex items-center space-x-4 text-xs font-medium text-slate-300">
+        <a href="index.html" class="hover:text-emerald-400">1. Overview</a>
+        <a href="firewalls.html" class="text-emerald-400 font-bold">2. Firewalls</a>
+        <a href="configuration.html" class="hover:text-emerald-400">3. Config</a>
+        <a href="iam.html" class="hover:text-emerald-400">4. IAM</a>
+        <a href="endpoint-patching.html" class="hover:text-emerald-400">5. Endpoint</a>
+        <a href="easm-cloud.html" class="hover:text-emerald-400">6. EASM</a>
+        <a href="roadmap-scorecard.html" class="hover:text-emerald-400">7. Roadmap</a>
+        <a href="cost-reduction.html" class="hover:text-emerald-400">8. Cost Savings</a>
+        <a href="vciso-soc.html" class="hover:text-emerald-400">9. vCISO/SOC</a>
+        <a href="contact-packages.html" class="hover:text-emerald-400">10. Contact</a>
+      </nav>
+      <a href="https://wa.me/8801730017321" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold px-3 py-1.5 rounded-lg text-xs transition">WhatsApp: +8801730017321</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
+    <div class="mb-8">
+      <span class="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Section 1</span>
+      <h1 class="text-3xl font-extrabold text-white mt-1">NCSC Control Pillar 1 – Firewalls & Network Gateways</h1>
+      <p class="text-slate-400 mt-1">Page 2 of 10</p>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl mb-8">
+      <h2 class="text-xl font-bold text-emerald-400 mb-4">1.1 Boundary Protection Requirements</h2>
+      <ul class="space-y-3 text-slate-300 text-sm">
+        <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span> <strong>Strict Default-Deny Rule:</strong> All unapproved inbound connection requests must be dropped automatically at the boundary.</li>
+        <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span> <strong>Block Administrative Ports:</strong> RDP (Port 3389) and SSH (Port 22) must never be directly exposed to the public internet.</li>
+        <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span> <strong>Zero-Trust Remote Access:</strong> Enforce encrypted VPN with MFA or ZTNA for all remote management tasks.</li>
+      </ul>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl mb-8">
+      <h3 class="text-lg font-bold text-white mb-3">Sample Edge Hardening Script (Linux UFW)</h3>
+      <pre class="bg-slate-950 text-emerald-300 p-4 rounded-lg font-mono text-xs overflow-x-auto">
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 80/tcp comment 'HTTP Web Traffic'
+sudo ufw allow 443/tcp comment 'HTTPS Web Traffic'
+sudo ufw enable</pre>
+    </div>
+
+    <div class="flex justify-between items-center pt-6 border-t border-slate-800">
+      <a href="index.html" class="text-slate-400 hover:text-white text-sm">&larr; Back: Overview</a>
+      <a href="configuration.html" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg text-sm transition">Next: Pillar 2 Configuration &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+    © 2026 Cyber Amanah | WhatsApp: +8801730017321 | Email: contact@cyberamanah.com
+  </footer>
+</body>
+</html>
